@@ -317,7 +317,7 @@ Some fields appear only when Facebook shows them:
 | A personal profile of a public figure, e.g., Mark Zuckerberg (`zuck`) | `profile_type` set to `PROFILE`, and `current_city`, `hometown`, `relationship`, `educations`, and `works` |
 | Another personal profile | `alternate_name`, and `about_details` with the work and education sections of the profile |
 
-Each profile has an `id`, its numeric Facebook ID, and a `url` with the username as Facebook spells it, e.g., `https://www.facebook.com/theritzlondon` for `TheRitzLondon`. `followers` and `following` are strings as Facebook shows them, e.g., 106M. The links to the profile picture, cover photo, and photos are signed Facebook links that expire, e.g., 4 days after the request, so download the images you want to keep. There's no pagination: each response describes one profile.
+Each profile has an `id`, its numeric Facebook ID, and a `url` with the username as Facebook spells it, e.g., `https://www.facebook.com/theritzlondon` for `TheRitzLondon`. `followers` and `following` are strings as Facebook shows them, e.g., 106M. The links to the profile picture, cover photo, and photos are signed Facebook links that expire, e.g., 4 days after the request, so request the profile again for fresh links. There's no pagination: each response describes one profile.
 
 ### Profile details
 
